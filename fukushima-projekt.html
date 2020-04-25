@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Fukushima Projekt Physik</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/lity.min.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-        <script data-search-pseudo-elements defer
-            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
-            crossorigin="anonymous"></script>
-        
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fukushima Projekt Physik</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/lity.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://static.sketchfab.com/api/sketchfab-viewer-1.7.1.js"></script>
+
+</head>
 
 <body>
     <div id="layoutDefault">
@@ -32,15 +33,17 @@
                             <ul class="navbar-nav ml-auto mr-lg-5">
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Menü
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Menü
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="abi2020/index.html">Abi 2020</a>
                                         <a class="dropdown-item" href="virus/index.html">Bioprojekt SARS-CoV-2</a>
-                                        <a class="dropdown-item" href="fukushima-projekt.html">Physikprojekt Fukushima</a>
-                                      </div>
-                                  </li>
+                                        <a class="dropdown-item" href="fukushima-projekt.html">Physikprojekt
+                                            Fukushima</a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -64,70 +67,121 @@
                         </svg>
                     </div>
                 </header>
+
+
+
+                <!-- main section -->
+
+
                 <section class="bg-white py-10">
-                    <div class="container mb-5">
+                    <div class="container-fluid mb-5">
 
-                        <a href="https://youtu.be/ktYofSxXIOc" data-lity>
-                            <img class="img-fluid border border-light p-2" src="assets/img/fukushima.jpg"/>
-                        </a>
-                        
-                    </div>
-                    <div class="svg-border-rounded text-dark">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
-                            fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-                        </svg>
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- iframe fuer 3D -->
+                                <iframe src="" id="api-frame" allow="autoplay" mozallowfullscreen="true"
+                                    webkitallowfullscreen="true"></iframe>
+
+                                <!-- Initialize the viewer -->
+                                <script type="text/javascript">
+                                    var iframe = document.getElementById('api-frame');
+                                    var uid = '578ad462808f489f84318b759268db0e';
+
+                                    // By default, the latest version of the viewer API will be used.
+                                    var client = new Sketchfab(iframe);
+
+                                    // Alternatively, you can request a specific version.
+                                    // var client = new Sketchfab( '1.7.1', iframe );
+
+                                    client.init(uid, {
+                                        success: function onSuccess(api) {
+                                            api.start();
+                                            api.addEventListener('viewerready', function () {
+
+                                                // API is ready to use
+                                                // Insert your code here
+                                                console.log('Viewer is ready');
+
+                                            });
+                                        },
+                                        error: function onError() {
+                                            console.log('Viewer error');
+                                        }
+                                    });
+                                </script>
+
+                            </div>
+
+                            <div class="col-6">
+
+
+                            </div>
+                        </div>
                     </div>
 
-                </section>
-            </main>
+                    <a href="https://youtu.be/ktYofSxXIOc" data-lity>
+                        <img class="img-fluid border border-light p-2" src="assets/img/fukushima.jpg" />
+                    </a>
+
         </div>
-        <div id="layoutDefault_footer">
-            <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="footer-brand">Sophia Horn Barajas</div>
-                            <div class="mb-3">Bioprojekt Viren</div>
-                            <div class="icon-list-social mb-5">
-                                <a class="icon-list-social-link" href="javascript:void(0);"><i
-                                        class="fab fa-instagram"></i></a><a class="icon-list-social-link"
-                                    href="javascript:void(0);"><i class="fab fa-facebook"></i></a><a
-                                    class="icon-list-social-link" href="javascript:void(0);"><i
-                                        class="fab fa-github"></i></a><a class="icon-list-social-link"
-                                    href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Inhalt</div>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="aufbau-viren.html">Aufbau Viren</a></li>
-                                        <li class="mb-2"><a href="aufbau-sars-cov-2.html">Aufbau SARS-CoV-2</a></li>
-                                        <li class="mb-2"><a href="vermehrung-viren.html">Vermehrung von Viren</a></li>
-                                        <li class="mb-2"><a href="steckbrief-covid-19.html">Steckbrief COVID-19</a></li>
-                                        <li class="mb-2"><a href="viren-lebewesen.html">Viren Lebewesen</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
-                                    <div class="text-uppercase-expanded text-xs mb-4">Quellen</div>
-                                    <ul class="list-unstyled mb-0">
-                                        <li class="mb-2"><a href="quellenverzeichnis.html">Quellenverzeichnis</a></li>
-                                        <li class="mb-2"><a href="quellenverzeichnis.html">Abbildungsverzeichnis</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+        <div class="svg-border-rounded text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                fill="currentColor">
+                <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+            </svg>
+        </div>
+
+        </section>
+
+        <!-- main section -->
+        </main>
+    </div>
+    <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="footer-brand">Sophia Horn Barajas</div>
+                        <div class="mb-3">Bioprojekt Viren</div>
+                        <div class="icon-list-social mb-5">
+                            <a class="icon-list-social-link" href="javascript:void(0);"><i
+                                    class="fab fa-instagram"></i></a><a class="icon-list-social-link"
+                                href="javascript:void(0);"><i class="fab fa-facebook"></i></a><a
+                                class="icon-list-social-link" href="javascript:void(0);"><i
+                                    class="fab fa-github"></i></a><a class="icon-list-social-link"
+                                href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
-                    <hr class="my-5" />
-                    <div class="row align-items-center">
-                        <div class="col-md-6 small">Copyright &copy; Sophia Horn Barajas 2020</div>
+                    <div class="col-lg-9">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                                <div class="text-uppercase-expanded text-xs mb-4">Inhalt</div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="aufbau-viren.html">Aufbau Viren</a></li>
+                                    <li class="mb-2"><a href="aufbau-sars-cov-2.html">Aufbau SARS-CoV-2</a></li>
+                                    <li class="mb-2"><a href="vermehrung-viren.html">Vermehrung von Viren</a></li>
+                                    <li class="mb-2"><a href="steckbrief-covid-19.html">Steckbrief COVID-19</a></li>
+                                    <li class="mb-2"><a href="viren-lebewesen.html">Viren Lebewesen</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                                <div class="text-uppercase-expanded text-xs mb-4">Quellen</div>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><a href="quellenverzeichnis.html">Quellenverzeichnis</a></li>
+                                    <li class="mb-2"><a href="quellenverzeichnis.html">Abbildungsverzeichnis</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+                <hr class="my-5" />
+                <div class="row align-items-center">
+                    <div class="col-md-6 small">Copyright &copy; Sophia Horn Barajas 2020</div>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
