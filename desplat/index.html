@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Musikprojekt Alexandre Desplat</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/lity.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <script data-search-pseudo-elements defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="layoutDefault">
+        <div id="layoutDefault_content">
+            <main>
+                <nav class="navbar sticky-top navbar-expand-lg bg-white navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand text-dark" href="index.html">Sophia Horn Barajas </a><button
+                            class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto mr-lg-5">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
+                                <li class="nav-item dropdown dropdown-xl no-caret">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inhalt<i
+                                            class="fas fa-chevron-right dropdown-arrow"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right animated--fade-in-up mr-lg-n15"
+                                        aria-labelledby="navbarDropdownDemos">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-5 p-lg-3 bg-img-cover overlay overlay-white overlay-60 d-none d-lg-block"
+                                                style='background-image: url("assets/img/profilesmall.jpg'>
+                                                <div
+                                                    class="d-flex h-100 w-100 align-items-center justify-content-center">
+                                                    <div class="text-white text-center z-1">
+                                                        <div class="mb-3">Alexandre Desplat</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-7 p-lg-5">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <h6 class="dropdown-header text-primary">Biografie</h6>
+                                                        <a class="dropdown-item"
+                                                            href="biografie.html#biografie">Biografie</a>
+                                                        <a class="dropdown-item"
+                                                            href="biografie.html#vorbilder">Vorbilder</a>
+                                                        <h6 class="dropdown-header text-primary">Werke</h6>
+                                                        <a class="dropdown-item" href="werke.html#werke">Filmmusik</a>
+                                                        <a class="dropdown-item" href="preise.html">Preise</a>
+                                                        <a class="dropdown-item" href="kritiken.html">Kritiken</a>
+                                                        <a class="dropdown-item"
+                                                            href="plagiatsverdacht.html">Plagiatsverdacht</a>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <h6 class="dropdown-header text-primary">Stil</h6>
+                                                        <a class="dropdown-item" href="beispiele.html">Noten und
+                                                            Hörbeispiele</a>         <a class="dropdown-item" href="merkmale.html">Merkmale</a>
+                                                        
+                                                        <a class="dropdown-item"
+                                                            href="komposition.html">Kompositionsweise</a>
+                                                        <div class="dropdown-divider border-0"></div>
+                                                        <h6 class="dropdown-header text-primary">Quellen</h6>
+                                                        <a class="dropdown-item" href="quellen.html">Quellen</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <header>
+                    <div class="overlay"></div>
+                    <img src="https://www.alexandredesplat.net/images/big/AlexandreDesplat-photo-BrigitteLacombe.jpg">
+
+                    <div class="container h-100">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white">
+                                <h1 class="display-1 text-warning">Alexandre Desplat</h1>
+                                <h1 class="display-3 text-white">Examensersatzleistung</h1>
+                                <p class="lead mb-0">Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
+                                <p class="lead mb-2"><em>Sophia Marisol Horn Barajas</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <style>
+                    header {
+                        position: relative;
+                        background-color: black;
+                        height: 75vh;
+                        min-height: 25rem;
+                        width: 100%;
+                        overflow: hidden;
+                    }
+
+                    header img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        min-width: 100%;
+                        min-height: 100%;
+                        width: auto;
+                        height: auto;
+                        z-index: 0;
+                        -ms-transform: translateX(-50%) translateY(-50%);
+                        -moz-transform: translateX(-50%) translateY(-50%);
+                        -webkit-transform: translateX(-50%) translateY(-50%);
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+
+                    header .container {
+                        position: relative;
+                        z-index: 2;
+                    }
+
+                    header .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background-color: black;
+                        opacity: 0.5;
+                        z-index: 1;
+                    }
+
+                    @media (pointer: coarse) and (hover: none) {
+                        header {
+                            background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+                        }
+
+                        header video {
+                            display: none;
+                        }
+                    }
+                </style>
+
+                <section class="bg-light py-5">
+                    <div class="container">
+                        <h2 class="text-center"></h2>
+                    </div>
+                    <div class="svg-border-rounded text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+                <section class="bg-white pb-10">
+                    <div id="tsparticles"></div>
+                    <div class="container">
+                        <div class="card mt-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Einleitung</h5>
+                                <p class="card-text">
+                                    Während der Einarbeitung in das Thema merkte ich, daß dieses sich hervorrangend für
+                                    interaktive Elemente wie Musikstücke, Poster der Filme, Notenbeispiele, usw. anbot. Daher entschied ich, neben der
+                                    klassischen Ausarbeitung als gedrucktes Dokument, auch diese Webseite zu erstellen.
+                                    Diesesbot mir auch Gelegenheit, meine technischen Kenntnisse zu verbessern, was sich
+                                    sicherin meiner späteren beruflichen Laufbahn auszahlt.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Aufgabenstellung</h5>
+                                <p class="card-text">
+                                    Thema: Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
+
+                                <p class="card-text"> Jeder Schüler bekommt einen Komponisten zugeteilt. Dieser
+                                    Komponist muss
+                                    recherchiert und seine Musik analysiert anhand mindestens eines Beispiels analysiert
+                                    werden. Abgabe in Form einer Powerpointpräsentation, die alle wichtigen
+                                    Informationen enthält. Die Powerpointpräsentation ist abzugeben und nicht mündlich
+                                    vorzutragen. Abgabe: 9.5.</p>
+
+                                <p class="card-text"> Folgende Aspekte werden bewertet:
+                                    <ul>
+                                        <li>Qualität der Präsentation</li>
+                                        <li>Quellenverzeichnis</li>
+                                        <li>Rezensionen: Was sagen
+                                            andere Komponisten über ihn?</li>
+                                            <li>Welche Preise hat er gewonnen? </li>
+                                        <li>Qualität des Inhalts
+                                            der Biographie</li>
+                                        <li>musikalische Vorbilder: Wem eiffert der Komponist nach, wen
+                                            bewundert er?</li>
+                                        <li>Liste aller Werke des Komponisten - Links zu Hörbeispielen seiner
+                                            besten Werke</li>
+                                        <li>Beschreibung seines Stils, was ist das Markenzeichen des Komponisten
+                                            (welches kompositorische Element verwendet der Komponist besonders gerne?)
+                                        </li>
+                                        <li>Notenbeispiel</li>
+                                        <li>Kompositionsweise/Einsatz musikalischer Mittel aufgezeigt mit
+                                            Hilfe des Notenbeispiels?</li>
+                                        <li>Plagiatsverdacht: Gibt es in seiner Musik Teile, die
+                                            sehr an ein anderes Werk erinnern? Zeige zumindest ein Beispiel auf!</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="card mt-3 mb-3">
+                            <div class="card-body">
+                                <span class="h5 card-title">Inhaltsverzeichnis</span>
+                            </div>
+                        </div>
+
+                        <div class="card-columns card-columns-portfolio">
+                            <a class="card card-portfolio" href="biografie.html#biografie"><img class="card-img-top"
+                                    src="https://source.unsplash.com/eMP4sYPJ9x0/400x300" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Biografie</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="biografie.html#vorbilder"><img class="card-img-top"
+                                    src="https://source.unsplash.com/fIq0tET6llw/400x400" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Vorbilder</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="werke.html#werke"><img class="card-img-top"
+                                    src="https://source.unsplash.com/cPYvUgSI2xc/400x300" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Filmmusik</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="preise.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/LV7lkepljdM/400x275" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Preise</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="kritiken.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/-fRAIQHKcc0/400x400" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Kritiken</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="plagiatsverdacht.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/rPOmLGwai2w/400x500" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Plagiatsverdacht</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="merkmale.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/UA76cH4JBHM/400x400" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Merkmale</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="beispiele.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/R-y4UiUruh0/400x400" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Noten und Hörbeispiel</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="komposition.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/cW3nDFVpi10/400x500" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Kompositionsweise</div>
+                                </div>
+                            </a><a class="card card-portfolio" href="quellen.html"><img class="card-img-top"
+                                    src="https://source.unsplash.com/vgQFlPq8tVQ/400x400" alt="..." />
+                                <div class="card-body">
+                                    <div class="card-title">Quellenverzeichnis</div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mt-5">
+                            <img class="card-img-top" src="https://source.unsplash.com/DO-Y3xbVo_0/1000x200"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Dokumente zum Download</h5>
+                                <p class="card-text">Wenn Sie es vorziehen die Ausarbeitung als Dokument
+                                    einzusehen,
+                                    hier die Links, auch der kompletten Seiten.</p>
+                                <div class="row text-center">
+                                    <div class="col-lg-4 mb-5 mb-lg-0">
+                                        <a href="SARS-CoV-2%20Sophia%20Horn%20Barajas-12B.pdf">
+                                            <div class="icon-stack icon-stack-xl bg-red text-white mb-4"><i
+                                                    class="fa fa-file-pdf"></i></div>
+                                        </a>
+                                        <h3>PDF</h3>
+                                        <p class="mb-0">PDF Datei</p>
+                                    </div>
+
+                                    <div class="col-lg-4 mb-5 mb-lg-0">
+                                        <a href="SARS-CoV-2%20Sophia%20Horn%20Barajas-12B.docx">
+                                            <div class="icon-stack icon-stack-xl bg-yellow text-white mb-4"><i
+                                                    class="far fa-file-word"></i></div>
+                                        </a>
+                                        <h3>Word</h3>
+                                        <p class="mb-0">Microsoft Word Datei</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <a href="https://github.com/sophiahorn/sophiahorn.github.io/archive/master.zip">
+                                            <div class="icon-stack icon-stack-xl bg-blue text-white mb-4"><i
+                                                    class="far fa-file-archive"></i></div>
+                                        </a>
+                                        <h3>ZIP</h3>
+                                        <p class="mb-0">Webseiten als ZIP Datei</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <p class="card-text text-center font-weight-light"><small><em>Easteregg: Vermehren oder
+                                            vertreiben Sie die Viren im Hintergrund</small></em></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="svg-border-rounded text-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+                <section class="bg-light py-10">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <h2>Feedback</h2>
+                                <p class="mb-5">Ich freue mich über Anregungen und Kritik!</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="icon-stack icon-stack-lg bg-orange text-white mb-3"><i
+                                                        class="far fa-envelope"></i></div>
+                                                <div class="small"><a
+                                                        href="mailto:sophia.mahoba@gmail.com">sophia.mahoba@gmail.com</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="icon-stack icon-stack-lg bg-green text-white mb-3"><i
+                                                        class="fab fa-whatsapp"></i></div>
+                                                <div class="small"><a
+                                                        href="https://wa.me/5215583064180?text=Hallo%20Sophia">+52 155
+                                                        8306 4180</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="svg-border-rounded text-dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
+                            fill="currentColor">
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                        </svg>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div id="layoutDefault_footer">
+            <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="footer-brand">Sophia Horn Barajas</div>
+                            <div class="mb-3">Musikprojekt<br>Alexandre Desplat</div>
+                            <div class="icon-list-social mb-5">
+                                <a class="icon-list-social-link" href="javascript:void(0);"><i
+                                        class="fab fa-instagram"></i></a><a class="icon-list-social-link"
+                                    href="javascript:void(0);"><i class="fab fa-facebook"></i></a><a
+                                    class="icon-list-social-link" href="javascript:void(0);"><i
+                                        class="fab fa-github"></i></a><a class="icon-list-social-link"
+                                    href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Biografie</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="biografie.html#biografie">Biografie</a></li>
+                                        <li class="mb-2"><a href="biografie.html#vorbilder">Vorbilder</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Werke</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="werke.html#werke">Filmmusik</a></li>
+                                        <li class="mb-2"><a href="preise.html">Preise</a></li>
+                                        <li class="mb-2"><a href="kritiken.html">Kritiken</a></li>
+                                        <li class="mb-2"><a href="plagiatsverdacht.html">Plagiatsverdacht</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                                    <div class="text-uppercase-expanded text-xs mb-4">Stil</div>
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><a href="merkmale.html">Merkmale</a></li>
+                                        <li class="mb-2"><a href="beispiele.html">Noten und Hörbeispiele</a>         </li>
+                                        <li class="mb-2"><a href="komposition.html">Kompositionsweise</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled mt-5 mb-0">
+                                        <li class="mb-2"><a href="quellen.html">Quellen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-5" />
+                    <div class="row align-items-center">
+                        <div class="col-md-6 small">Copyright &copy; Sophia Horn Barajas 2020</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <style>
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+        /* ---- tsparticles container ---- */
+        #tsparticles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.12.11/dist/tsparticles.min.js"></script>
+    <script>
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            interactivity: {
+                detectsOn: "canvas",
+                events: {
+                    onClick: { enable: true, mode: "push" },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
+                        parallax: {
+                            enable: false,
+                            force: 60,
+                            smooth: 10
+                        }
+                    },
+                    resize: true
+                },
+                modes: {
+                    bubble: { distance: 400, duration: 2, opacity: 1, size: 64, speed: 3 },
+                    grab: { distance: 400, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 2 },
+                    remove: { particles_nb: 2 },
+                    repulse: { distance: 50, duration: 0.4 }
+                }
+            },
+            particles: {
+                color: { value: "#ffffff" },
+                lineLinked: {
+                    color: "#323031",
+                    distance: 150,
+                    enable: false,
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 },
+                    bounce: false,
+                    direction: "none",
+                    enable: true,
+                    outMode: "bounce",
+                    random: false,
+                    speed: 6,
+                    straight: false
+                },
+                number: {
+                    density: {
+                        enable: true,
+                        area: 800
+                    },
+                    value: 10
+                },
+                opacity: {
+                    animation: { enable: false, minimumValue: 0.1, speed: 1, sync: false },
+                    random: false,
+                    value: 0.4
+                },
+                shape: {
+                    character: {
+                        fill: false,
+                        font: "Verdana",
+                        style: "",
+                        value: "*",
+                        weight: "400"
+                    },
+                    image: {
+                        height: 100,
+                        replaceColor: true,
+                        src: "assets/img/music_small.png",
+                        width: 100
+                    },
+                    polygon: { nb_sides: 5 },
+                    stroke: { color: "#000000", width: 0 },
+                    type: "image"
+                },
+                size: {
+                    anim: { enable: true, minimumValue: 8, speed: 20, sync: false },
+                    random: false,
+                    value: 32
+                }
+            },
+            polygon: {
+                draw: { enable: false, lineColor: "#ffffff", lineWidth: 0.5 },
+                move: { radius: 10 },
+                scale: 1,
+                type: "none",
+                url: ""
+            },
+            detectRetina: true
+        });
+
+    </script>
+</body>
+
+</html>
