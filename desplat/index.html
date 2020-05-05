@@ -30,6 +30,7 @@
                             aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto mr-lg-5">
+                                <li class="nav-item"><span class="nav-link" onclick="xpause()">Audio <i class="fas fa-pause"></i></span></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
                                 <li class="nav-item dropdown dropdown-xl no-caret">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
@@ -65,8 +66,9 @@
                                                     <div class="col-lg-6">
                                                         <h6 class="dropdown-header text-primary">Stil</h6>
                                                         <a class="dropdown-item" href="beispiele.html">Noten und
-                                                            Hörbeispiele</a>         <a class="dropdown-item" href="merkmale.html">Merkmale</a>
-                                                        
+                                                            Hörbeispiele</a> <a class="dropdown-item"
+                                                            href="merkmale.html">Merkmale</a>
+
                                                         <a class="dropdown-item"
                                                             href="merkmale.html">Kompositionsweise</a>
                                                         <div class="dropdown-divider border-0"></div>
@@ -91,7 +93,7 @@
                             <div class="w-100 text-white">
                                 <h1 class="display-1 text-warning">Alexandre Desplat</h1>
                                 <h1 class="display-3 text-white">Examensersatzleistung</h1>
-                                <p class="lead mb-0">Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
+                                <p class="lead mb-2">Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
                                 <p class="lead mb-2"><em>Sophia Marisol Horn Barajas</em></p>
                             </div>
                         </div>
@@ -169,9 +171,11 @@
                                 <h5 class="card-title">Einleitung</h5>
                                 <p class="card-text">
                                     Während der Einarbeitung in das Thema merkte ich, daß dieses sich hervorragend für
-                                    interaktive Elemente wie Musikstücke, Poster der Filme, Notenbeispiele, usw. anbot. Daher entschied ich, neben der
+                                    interaktive Elemente wie Musikstücke, Poster der Filme, Notenbeispiele, usw. anbot.
+                                    Daher entschied ich, neben der
                                     klassischen Ausarbeitung als gedrucktes Dokument, auch diese Webseite zu erstellen.
-                                    Dieses bot mir auch Gelegenheit, meine technischen Kenntnisse zu verbessern, was sich
+                                    Dieses bot mir auch Gelegenheit, meine technischen Kenntnisse zu verbessern, was
+                                    sich
                                     sicher in meiner späteren beruflichen Laufbahn auszahlt.
                                 </p>
                             </div>
@@ -196,7 +200,7 @@
                                         <li>Quellenverzeichnis</li>
                                         <li>Rezensionen: Was sagen
                                             andere Komponisten über ihn?</li>
-                                            <li>Welche Preise hat er gewonnen? </li>
+                                        <li>Welche Preise hat er gewonnen? </li>
                                         <li>Qualität des Inhalts
                                             der Biographie</li>
                                         <li>Musikalische Vorbilder: Wem eifert der Komponist nach, wen
@@ -404,7 +408,7 @@
                                     <div class="text-uppercase-expanded text-xs mb-4">Stil</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="merkmale.html">Merkmale</a></li>
-                                        <li class="mb-2"><a href="beispiele.html">Noten und Hörbeispiele</a>         </li>
+                                        <li class="mb-2"><a href="beispiele.html">Noten und Hörbeispiele</a> </li>
                                         <li class="mb-2"><a href="merkmale.html">Kompositionsweise</a></li>
                                     </ul>
                                     <ul class="list-unstyled mt-5 mb-0">
@@ -417,6 +421,8 @@
                     <hr class="my-5" />
                     <div class="row align-items-center">
                         <div class="col-md-6 small">Copyright &copy; Sophia Horn Barajas 2020</div>
+                        <iframe src="https://rincondelmar.club/Filmography.mp4#t=4320" allow="autoplay" id="audio"
+                            style="display: none"></iframe>
                     </div>
                 </div>
             </footer>
@@ -441,6 +447,11 @@
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        function xpause() {
+            $('#audio').remove();
+        }
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

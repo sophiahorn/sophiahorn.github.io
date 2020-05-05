@@ -30,6 +30,7 @@
                             aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto mr-lg-5">
+                                <li class="nav-item"><span class="nav-link" onclick="xpause()">Audio <i class="fas fa-pause"></i></span></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
                                 <li class="nav-item dropdown dropdown-xl no-caret">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
@@ -296,12 +297,19 @@
                     <hr class="my-5" />
                     <div class="row align-items-center">
                         <div class="col-md-6 small">Copyright &copy; Sophia Horn Barajas 2020</div>
+                        <iframe src="https://rincondelmar.club/Filmography.mp4#t=60" allow="autoplay" id="audio"
+            style="display: none"></iframe>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        function xpause() {
+            $('#audio').remove();
+        }
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
