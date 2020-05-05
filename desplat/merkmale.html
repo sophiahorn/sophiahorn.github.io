@@ -106,17 +106,25 @@
                     <div class="container">
                         <h2>Merkmale und Kompositionsweise</h2>
                         <p>Desplat ist ein großartiger Filmkomponist, der seine eigene, moderne und vor allem
-                            kreative Form findet, Filmen in musikalischer Hinsicht Ausdruck zu verleihen. Es ist dabei schwer
+                            kreative Form findet, Filmen in musikalischer Hinsicht Ausdruck zu verleihen. Es ist dabei
+                            schwer
                             seine mehr als 180 veröffentlichte Werke in einzelne Merkmale oder Kompositionsweisen
                             herunterzubrechen.</p>
                         <p>Ein herrausragendes Merkmal ist auf jeden Fall seine Vielfältigkeit: Manchmal bietet er ein
-                            leise vor sich hinsäuselndes Pianosolo an, welches nur zart den Film umarmt. Dann
+                            leise vor sich hinsäuselndes Pianosolo an (<i class="fas fa-play-circle"
+                                onclick="playVideo('4380')"></i>), welches nur zart den Film umarmt. Dann
                             erschüttert er den Cineasten mit einem ohrenberstenden Crescendo eines vollen
-                            Philarmonieorchester - um in der nächsten Scene mit tiefem Oboenklang in dunkelstem Moll dem
+                            Philarmonieorchester (<i class="fas fa-play-circle" onclick="playVideo('4140')"></i>) - um
+                            in der nächsten Scene mit tiefem Oboenklang in dunkelstem Moll (<i
+                                class="fas fa-play-circle" onclick="playVideo('3720')"></i>) dem
                             Zuschauer die Haare zu Berge stehen zu lassen.</p>
-                        <p>Ob lateinamerikanischer Cha-cha-cha wie in "Amazone", James-Bond-artigem Trompetenwirbel in
-                            Thrillermanier wie in "L'Enquète corse", mystisch anwirkendem Sirenklang wie in "Shape of
-                            Water" - Alexandre Desplat beherrscht alle Stile - und wendet sie auch an wenn seiner
+                        <p>Ob lateinamerikanischer Cha-cha-cha wie in "Amazone" (<i class="fas fa-play-circle"
+                                onclick="playVideo('600')"></i>), James-Bond-artigem Trompetenwirbel in
+                            Thrillermanier wie in "L'Enquète corse" (<i class="fas fa-play-circle"
+                                onclick="playVideo('1080')"></i>), mystisch anwirkendem Sirenklang wie in "Shape of
+                            Water" (<i class="fas fa-play-circle" onclick="playVideo('5220')"></i>), oder Folklore wie
+                            in Frantastic Mr. Fox (<i class="fas fa-play-circle" onclick="playVideo('2520')"></i>) -
+                            Alexandre Desplat beherrscht alle Stile - und wendet sie auch an wenn seiner
                             Ansicht nach geboten. Hören wir den Meister dazu:</p>
 
                         <div class="media mb-5 mt-7 align-middle bg-light">
@@ -136,7 +144,11 @@
                         <p>Desplats Ansatz ist es, den spezifischen Ton jedes Films zu entdecken. Er sagt selbst, dass
                             er zuerst nicht in Melodien denke, sondern an Licht,
                             Farbe, Tempo und Kamerabewegungen einer Geschichte. Welche Textur, Atmosphäre und
-                            Geräusche können den Film wirklich umarmen und daran festhalten? Erst nach dieser Arbeit
+                            Geräusche können den Film wirklich umarmen und daran festhalten? Heitere Stimmung? (<i
+                                class="fas fa-play-circle" onclick="playVideo('5100')"></i>). Jazzig? (<i
+                                class="fas fa-play-circle" onclick="playVideo('4800')"></i>) Mystisch und dramatisch?
+                            (<i class="fas fa-play-circle" onclick="playVideo('4560')"></i>) Episch? (<i
+                                class="fas fa-play-circle" onclick="playVideo('3000')"></i>)<br>Erst nach dieser Arbeit
                             kommt erst kommt die Melodie und Orchestrierung</p>
                         <p>Seine Musik versucht somit, die Stimmung des Filmes, der Handlung, ja der einzelnen Szene zu
                             fassen
@@ -165,9 +177,15 @@
                             Beispiel
                             das London Symphony Orchestra, das Royal Philharmonic Orchestra, die tschechischen
                             Philharmoniker, das Berliner Studioorchester, und das Münchner Sinfonieorchester.</p>
-                        <p>Seine Kompositionen ist gemein, daß er einzelnen Teilen des Orchesters die Möglichkeit gibt,
-                            in Solos oder kleinen Gruppen zu glänzen. Dies erlaubt es ihm auch, die besten Solisten für seine Stücke zu bekommen, da sie namentlich genannnt in Rezensionen erwähnt werden. Auch seiner Liebe zu tiefen Flötentönen ist er treu geblieben, sie vermitteln oft eine besondere Atmosphäre in seinen Stücken.</p>
-                        <p>Desplat setzt auf Emotionen: Seine Musik soll den Carakter der Szenen unterstreichen, den Zuschauer bewegen:</p>
+                        <p>Seinen Kompositionen ist gemein, daß er einzelnen Teilen des Orchesters die Möglichkeit gibt,
+                            in Solos oder kleinen Gruppen zu glänzen (<i class="fas fa-play-circle"
+                                onclick="playVideo('2760')"></i>). Dies erlaubt es ihm auch, die besten Solisten für
+                            seine Stücke zu bekommen, da sie namentlich genannnt in Rezensionen erwähnt werden. Auch
+                            seiner Liebe zu tiefen Flötentönen ist er treu geblieben, sie vermitteln oft eine besondere
+                            Atmosphäre in seinen Stücken (<i class="fas fa-play-circle"
+                                onclick="playVideo('1140')"></i>).</p>
+                        <p>Desplat setzt auf Emotionen: Seine Musik soll den Carakter der Szenen unterstreichen, den
+                            Zuschauer bewegen:</p>
 
                         <div class="media mb-5 mt-7 align-middle bg-light">
                             <img src="assets/img/desplat.jpg" width="300px"
@@ -183,6 +201,19 @@
                                 </blockquote>
                             </div>
                         </div>
+                        <video id="myVideo" width="10px" height="10px">
+                            <source src="https://rincondelmar.club/Filmography.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <script>
+                            var vid = document.getElementById("myVideo");
+
+                            function playVideo(time) {
+                                vid.currentTime = time;
+                                vid.play();
+                            }
+
+                        </script>
 
                     </div>
 
