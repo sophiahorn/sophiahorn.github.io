@@ -65,10 +65,11 @@
                                                     <div class="col-lg-6">
                                                         <h6 class="dropdown-header text-primary">Stil</h6>
                                                         <a class="dropdown-item" href="beispiele.html">Noten und
-                                                            Hörbeispiele</a>         <a class="dropdown-item" href="merkmale.html">Merkmale</a>
-                                                        
+                                                            Hörbeispiele</a> <a class="dropdown-item"
+                                                            href="merkmale.html">Merkmale</a>
+
                                                         <a class="dropdown-item"
-                                                            href="komposition.html">Kompositionsweise</a>
+                                                            href="merkmale.html">Kompositionsweise</a>
                                                         <div class="dropdown-divider border-0"></div>
                                                         <h6 class="dropdown-header text-primary">Quellen</h6>
                                                         <a class="dropdown-item" href="quellen.html">Quellen</a>
@@ -104,589 +105,599 @@
                 <section class="bg-white py-10">
                     <div class="container">
 
-                        <h2>Playlist Songbeipiele <span class="text-muted"> (Nicht vollständig)</span></h2>
+                        <h2>Höhrbeipiele</span></h2>
                         <p>Scrollen sie durch die Liste und klicken Sie auf die Songs (<i
-                                class="fas fa-play-circle text-primary"></i>)</p>
+                                class="fas fa-play-circle text-primary"></i>), die Titel werden mit
+                            Postern zu den einzelnen Filmen wiedgergeben.</p>
 
-                        <div style="max-height:500px;overflow: auto;" class="mb-5">
+                        <div class="border border-info rounded bg-light p-5">
+
+                            <div style="position:relative; overflow: hidden; height:700px">
+                                <img style="position: absolute; width:100%" class="img-fluid" src="assets/img/tv.png">
+                                <video style="margin-left: 5%; margin-right: 30%; margin-bottom:10%; margin-top:5%"
+                                    id="myVideo" width="70%">
+                                    <source src="https://rincondelmar.club/Filmography.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+
+                            <div style="max-height:500px;overflow: auto;" class="mt-2">
 
 
-                            <table id="tablebeispiele" class="table table-sm table-striped">
-                                <tr ">
+                                <table id="tablebeispiele" class="table table-sm table-striped">
+                                    <tr ">
                                     <th><i class=" fas fa-play-circle text-primary"></i></th>
-                                    <th>Jahr</th>
-                                    <th>Titel</th>
-                                    <th>Startzeit</th>
-                                </tr>
-                                <tr onclick="playVideo('0')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1993</td>
-                                    <td>The advocate / The Hour of the Pig</td>
-                                    <td>00:00</td>
-                                </tr>
-                                <tr onclick="playVideo('60')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1994</td>
-                                    <td>Regarde les hommes tomber / See How They Fall </td>
-                                    <td>01:00</td>
-                                </tr>
-                                <tr onclick="playVideo('120')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1994</td>
-                                    <td>Les Milles: le train de la liberté </td>
-                                    <td>02:00</td>
-                                </tr>
-                                <tr onclick="playVideo('180')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1995</td>
-                                    <td>Les Peches Mortels / Innocent Lies</td>
-                                    <td>03:00</td>
-                                </tr>
-                                <tr onclick="playVideo('240')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1996</td>
-                                    <td>Un Héros très discret / A Self Made Hero </td>
-                                    <td>04:00</td>
-                                </tr>
-                                <tr onclick="playVideo('300')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1996</td>
-                                    <td>Love, etc. </td>
-                                    <td>05:00</td>
-                                </tr>
-                                <tr onclick="playVideo('360')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1997</td>
-                                    <td>La Femme du cosmonaute </td>
-                                    <td>06:00</td>
-                                </tr>
-                                <tr onclick="playVideo('420')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1998</td>
-                                    <td>Une Chance sur deux </td>
-                                    <td>07:00</td>
-                                </tr>
-                                <tr onclick="playVideo('480')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1998</td>
-                                    <td>Restons groupés </td>
-                                    <td>08:00</td>
-                                </tr>
-                                <tr onclick="playVideo('540')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>1999</td>
-                                    <td>Toni</td>
-                                    <td>09:00</td>
-                                </tr>
+                                        <th>Jahr</th>
+                                        <th>Titel</th>
+                                        <th>Startzeit</th>
+                                    </tr>
+                                    <tr onclick="playVideo('0')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1993</td>
+                                        <td>The advocate / The Hour of the Pig</td>
+                                        <td>00:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('60')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1994</td>
+                                        <td>Regarde les hommes tomber / See How They Fall </td>
+                                        <td>01:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('120')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1994</td>
+                                        <td>Les Milles: le train de la liberté </td>
+                                        <td>02:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('180')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1995</td>
+                                        <td>Les Peches Mortels / Innocent Lies</td>
+                                        <td>03:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('240')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1996</td>
+                                        <td>Un Héros très discret / A Self Made Hero </td>
+                                        <td>04:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('300')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1996</td>
+                                        <td>Love, etc. </td>
+                                        <td>05:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('360')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1997</td>
+                                        <td>La Femme du cosmonaute </td>
+                                        <td>06:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('420')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1998</td>
+                                        <td>Une Chance sur deux </td>
+                                        <td>07:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('480')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1998</td>
+                                        <td>Restons groupés </td>
+                                        <td>08:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('540')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>1999</td>
+                                        <td>Toni</td>
+                                        <td>09:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('600')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2000</td>
-                                    <td>Amazone </td>
-                                    <td>10:00</td>
-                                </tr>
-                                <tr onclick="playVideo('660')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2000</td>
-                                    <td>The Luzhin defence </td>
-                                    <td>11:00</td>
-                                </tr>
-                                <tr onclick="playVideo('720')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2001</td>
-                                    <td>Sur mes lèvres / Read My Lips</td>
-                                    <td>12:00</td>
-                                </tr>
-                                <tr onclick="playVideo('780')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2001</td>
-                                    <td>Reines d´un jour / A Hell of a Day</td>
-                                    <td>13:00</td>
-                                </tr>
-                                <tr onclick="playVideo('840')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2001</td>
-                                    <td>Nid de guêpes / The Nest</td>
-                                    <td>14:00</td>
-                                </tr>
-                                <tr onclick="playVideo('900')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2001</td>
-                                    <td>Mauvais genres / Transfixion </td>
-                                    <td>15:00</td>
-                                </tr>
-                                <tr onclick="playVideo('960')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2003</td>
-                                    <td>Les Corps impatients / Eager Bodies </td>
-                                    <td>16:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1020')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2003</td>
-                                    <td>Girl with a Pearl Earring </td>
-                                    <td>17:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1080')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2004</td>
-                                    <td>L'Enquète corse / The Corsican File </td>
-                                    <td>18:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1140')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2004</td>
-                                    <td>Birth</td>
-                                    <td>19:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('600')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2000</td>
+                                        <td>Amazone </td>
+                                        <td>10:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('660')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2000</td>
+                                        <td>The Luzhin defence </td>
+                                        <td>11:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('720')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2001</td>
+                                        <td>Sur mes lèvres / Read My Lips</td>
+                                        <td>12:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('780')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2001</td>
+                                        <td>Reines d´un jour / A Hell of a Day</td>
+                                        <td>13:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('840')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2001</td>
+                                        <td>Nid de guêpes / The Nest</td>
+                                        <td>14:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('900')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2001</td>
+                                        <td>Mauvais genres / Transfixion </td>
+                                        <td>15:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('960')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2003</td>
+                                        <td>Les Corps impatients / Eager Bodies </td>
+                                        <td>16:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1020')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2003</td>
+                                        <td>Girl with a Pearl Earring </td>
+                                        <td>17:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1080')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2004</td>
+                                        <td>L'Enquète corse / The Corsican File </td>
+                                        <td>18:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1140')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2004</td>
+                                        <td>Birth</td>
+                                        <td>19:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('1200')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2005</td>
-                                    <td>Syriana </td>
-                                    <td>20:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1260')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2005</td>
-                                    <td>Casanova </td>
-                                    <td>21:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1320')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2005</td>
-                                    <td>De battre mon coeur s'est arrêté / The Beat That My Heart Skipped </td>
-                                    <td>22:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1380')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2005</td>
-                                    <td>Hostage </td>
-                                    <td>23:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1440')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2005</td>
-                                    <td>The Upside of Anger</td>
-                                    <td>24:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1500')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2006</td>
-                                    <td>Firewall </td>
-                                    <td>25:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1560')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2006</td>
-                                    <td>The Queen</td>
-                                    <td>26:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1620')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2006</td>
-                                    <td>The Painted Veil </td>
-                                    <td>27:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1680')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2006</td>
-                                    <td>Quand j'étais chanteur / The Singer </td>
-                                    <td>28:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1740')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2007</td>
-                                    <td>Lust & Caution</td>
-                                    <td>29:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('1200')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2005</td>
+                                        <td>Syriana </td>
+                                        <td>20:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1260')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2005</td>
+                                        <td>Casanova </td>
+                                        <td>21:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1320')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2005</td>
+                                        <td>De battre mon coeur s'est arrêté / The Beat That My Heart Skipped </td>
+                                        <td>22:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1380')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2005</td>
+                                        <td>Hostage </td>
+                                        <td>23:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1440')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2005</td>
+                                        <td>The Upside of Anger</td>
+                                        <td>24:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1500')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2006</td>
+                                        <td>Firewall </td>
+                                        <td>25:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1560')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2006</td>
+                                        <td>The Queen</td>
+                                        <td>26:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1620')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2006</td>
+                                        <td>The Painted Veil </td>
+                                        <td>27:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1680')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2006</td>
+                                        <td>Quand j'étais chanteur / The Singer </td>
+                                        <td>28:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1740')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2007</td>
+                                        <td>Lust & Caution</td>
+                                        <td>29:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('1800')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2007</td>
-                                    <td>L'Ennemi intime / Intimate Enemies </td>
-                                    <td>30:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1860')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2007</td>
-                                    <td>The Golden Compass</td>
-                                    <td>31:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1920')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2007</td>
-                                    <td>Mr. Magorium's Wonder Emporium </td>
-                                    <td>32:00</td>
-                                </tr>
-                                <tr onclick="playVideo('1980')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2008</td>
-                                    <td>Largo Winch </td>
-                                    <td>33:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2040')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2008</td>
-                                    <td>The Curious Case of Benjamin Button </td>
-                                    <td>34:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2100')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2008</td>
-                                    <td>Afterwards </td>
-                                    <td>35:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2160')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>Chéri </td>
-                                    <td>36:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2220')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>Coco Avant Chanel </td>
-                                    <td>37:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2280')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>Julie & Julia </td>
-                                    <td>38:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2340')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>L'Armée du crime / The Army of Crime</td>
-                                    <td>39:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('1800')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2007</td>
+                                        <td>L'Ennemi intime / Intimate Enemies </td>
+                                        <td>30:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1860')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2007</td>
+                                        <td>The Golden Compass</td>
+                                        <td>31:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1920')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2007</td>
+                                        <td>Mr. Magorium's Wonder Emporium </td>
+                                        <td>32:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('1980')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2008</td>
+                                        <td>Largo Winch </td>
+                                        <td>33:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2040')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2008</td>
+                                        <td>The Curious Case of Benjamin Button </td>
+                                        <td>34:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2100')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2008</td>
+                                        <td>Afterwards </td>
+                                        <td>35:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2160')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>Chéri </td>
+                                        <td>36:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2220')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>Coco Avant Chanel </td>
+                                        <td>37:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2280')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>Julie & Julia </td>
+                                        <td>38:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2340')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>L'Armée du crime / The Army of Crime</td>
+                                        <td>39:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('2400')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>Un Prophète / A Prophet</td>
-                                    <td>40:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2460')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>The Twilight Saga: New Moon </td>
-                                    <td>41:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2520')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2009</td>
-                                    <td>Fantastic Mr. Fox </td>
-                                    <td>42:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2580')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2010</td>
-                                    <td>Tamara Drewe </td>
-                                    <td>43:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2640')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2010</td>
-                                    <td>Harry Potter and the Deathly Hallows: Part 1 </td>
-                                    <td>44:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2700')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2010</td>
-                                    <td>The Special Relationship / La relación especial</td>
-                                    <td>45:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2760')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2010</td>
-                                    <td>The King´s Speech </td>
-                                    <td>46:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2820')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2010</td>
-                                    <td>The Ghost Writer </td>
-                                    <td>47:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2880')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>Largo Winch (Tome 2) / The Burma Conspiracy </td>
-                                    <td>48:00</td>
-                                </tr>
-                                <tr onclick="playVideo('2940')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>The Tree of Life </td>
-                                    <td>49:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('2400')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>Un Prophète / A Prophet</td>
+                                        <td>40:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2460')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>The Twilight Saga: New Moon </td>
+                                        <td>41:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2520')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2009</td>
+                                        <td>Fantastic Mr. Fox </td>
+                                        <td>42:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2580')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2010</td>
+                                        <td>Tamara Drewe </td>
+                                        <td>43:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2640')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2010</td>
+                                        <td>Harry Potter and the Deathly Hallows: Part 1 </td>
+                                        <td>44:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2700')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2010</td>
+                                        <td>The Special Relationship / La relación especial</td>
+                                        <td>45:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2760')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2010</td>
+                                        <td>The King´s Speech </td>
+                                        <td>46:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2820')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2010</td>
+                                        <td>The Ghost Writer </td>
+                                        <td>47:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2880')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>Largo Winch (Tome 2) / The Burma Conspiracy </td>
+                                        <td>48:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('2940')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>The Tree of Life </td>
+                                        <td>49:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('3000')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>Harry Potter and the Deathly Hallows: Part 2 </td>
-                                    <td>50:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3060')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>La Fille du puisatier / The Well-Digger's Daughter </td>
-                                    <td>51:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3120')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>A Better Life </td>
-                                    <td>52:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3180')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>The Ides of March </td>
-                                    <td>53:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3240')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>My Week with Marilyn </td>
-                                    <td>54:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3300')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>Extremely Loud and Incredibly Close </td>
-                                    <td>55:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3360')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2011</td>
-                                    <td>Carnage </td>
-                                    <td>56:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3420')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>My Way / Cloclo </td>
-                                    <td>57:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3480')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>De Rouille et d'os / Rust and Bone</td>
-                                    <td>58:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3540')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>Argo </td>
-                                    <td>59:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('3000')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>Harry Potter and the Deathly Hallows: Part 2 </td>
+                                        <td>50:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3060')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>La Fille du puisatier / The Well-Digger's Daughter </td>
+                                        <td>51:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3120')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>A Better Life </td>
+                                        <td>52:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3180')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>The Ides of March </td>
+                                        <td>53:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3240')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>My Week with Marilyn </td>
+                                        <td>54:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3300')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>Extremely Loud and Incredibly Close </td>
+                                        <td>55:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3360')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2011</td>
+                                        <td>Carnage </td>
+                                        <td>56:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3420')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>My Way / Cloclo </td>
+                                        <td>57:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3480')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>De Rouille et d'os / Rust and Bone</td>
+                                        <td>58:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3540')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>Argo </td>
+                                        <td>59:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('3600')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>Reality </td>
-                                    <td>1:00:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3660')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>Rise of the Guardians </td>
-                                    <td>1:01:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3720')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>Zero Dark Thirty </td>
-                                    <td>1:02:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3780')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2012</td>
-                                    <td>Renoir </td>
-                                    <td>1:03:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3840')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2013</td>
-                                    <td>Philomena </td>
-                                    <td>1:04:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3900')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2013</td>
-                                    <td>Venus in Fur</td>
-                                    <td>1:05:00</td>
-                                </tr>
-                                <tr onclick="playVideo('3960')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2013</td>
-                                    <td>Zulu </td>
-                                    <td>1:06:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4020')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>The Monuments Men </td>
-                                    <td>1:07:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4080')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>The Grand Budapest Hotel </td>
-                                    <td>1:08:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4140')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>Godzilla </td>
-                                    <td>1:09:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('3600')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>Reality </td>
+                                        <td>1:00:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3660')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>Rise of the Guardians </td>
+                                        <td>1:01:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3720')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>Zero Dark Thirty </td>
+                                        <td>1:02:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3780')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2012</td>
+                                        <td>Renoir </td>
+                                        <td>1:03:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3840')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2013</td>
+                                        <td>Philomena </td>
+                                        <td>1:04:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3900')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2013</td>
+                                        <td>Venus in Fur</td>
+                                        <td>1:05:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('3960')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2013</td>
+                                        <td>Zulu </td>
+                                        <td>1:06:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4020')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>The Monuments Men </td>
+                                        <td>1:07:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4080')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>The Grand Budapest Hotel </td>
+                                        <td>1:08:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4140')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>Godzilla </td>
+                                        <td>1:09:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('4200')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>The Imitation Game </td>
-                                    <td>1:10:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4260')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>Unbroken </td>
-                                    <td>1:11:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4320')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2014</td>
-                                    <td>Suite Française </td>
-                                    <td>1:12:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4380')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2015</td>
-                                    <td>The Danish Girl</td>
-                                    <td>1:13:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4440')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2015</td>
-                                    <td>Every Thing Will Be Fine </td>
-                                    <td>1:14:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4500')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2015</td>
-                                    <td>Tale of Tales </td>
-                                    <td>1:15:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4560')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>L'Odyssée / The Odyssey </td>
-                                    <td>1:16:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4620')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>American Pastoral </td>
-                                    <td>1:17:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4680')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>Marseille</td>
-                                    <td>1:18:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4740')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>The Light Between Oceans </td>
-                                    <td>1:19:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('4200')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>The Imitation Game </td>
+                                        <td>1:10:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4260')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>Unbroken </td>
+                                        <td>1:11:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4320')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2014</td>
+                                        <td>Suite Française </td>
+                                        <td>1:12:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4380')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2015</td>
+                                        <td>The Danish Girl</td>
+                                        <td>1:13:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4440')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2015</td>
+                                        <td>Every Thing Will Be Fine </td>
+                                        <td>1:14:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4500')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2015</td>
+                                        <td>Tale of Tales </td>
+                                        <td>1:15:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4560')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>L'Odyssée / The Odyssey </td>
+                                        <td>1:16:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4620')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>American Pastoral </td>
+                                        <td>1:17:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4680')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>Marseille</td>
+                                        <td>1:18:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4740')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>The Light Between Oceans </td>
+                                        <td>1:19:00</td>
+                                    </tr>
 
-                                <tr onclick="playVideo('4800')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>The Secret Life of Pets </td>
-                                    <td>1:20:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4860')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>Florence Foster Jenkins </td>
-                                    <td>1:21:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4920')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>Alone in Berlin </td>
-                                    <td>1:22:00</td>
-                                </tr>
-                                <tr onclick="playVideo('4980')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2016</td>
-                                    <td>Réparer les vivants / Heal the Living</td>
-                                    <td>1:23:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5040')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2017</td>
-                                    <td>D'après une histoire vraie / Based on a True Story </td>
-                                    <td>1:24:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5100')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2017</td>
-                                    <td>Suburbicon</i> </td>
-                                    <td>1:25:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5160')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2017</td>
-                                    <td>Valerian and the City of a Thousand Planets </td>
-                                    <td>1:26:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5220')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2017</td>
-                                    <td>The Shape of Water </td>
-                                    <td>1:27:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5280')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2018</td>
-                                    <td>The Sisters Brothers</td>
-                                    <td>1:28:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5340')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2018</td>
-                                    <td>Operation Finale</td>
-                                    <td>1:29:00</td>
-                                </tr>
-                                <tr onclick="playVideo('5400')">
-                                    <td><i class="fas fa-play-circle"></i></td>
-                                    <td>2018</td>
-                                    <td>Isle of Dogs</td>
-                                    <td>1:30:00</td>
-                                </tr>
+                                    <tr onclick="playVideo('4800')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>The Secret Life of Pets </td>
+                                        <td>1:20:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4860')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>Florence Foster Jenkins </td>
+                                        <td>1:21:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4920')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>Alone in Berlin </td>
+                                        <td>1:22:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('4980')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2016</td>
+                                        <td>Réparer les vivants / Heal the Living</td>
+                                        <td>1:23:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5040')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2017</td>
+                                        <td>D'après une histoire vraie / Based on a True Story </td>
+                                        <td>1:24:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5100')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2017</td>
+                                        <td>Suburbicon</i> </td>
+                                        <td>1:25:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5160')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2017</td>
+                                        <td>Valerian and the City of a Thousand Planets </td>
+                                        <td>1:26:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5220')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2017</td>
+                                        <td>The Shape of Water </td>
+                                        <td>1:27:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5280')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2018</td>
+                                        <td>The Sisters Brothers</td>
+                                        <td>1:28:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5340')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2018</td>
+                                        <td>Operation Finale</td>
+                                        <td>1:29:00</td>
+                                    </tr>
+                                    <tr onclick="playVideo('5400')">
+                                        <td><i class="fas fa-play-circle"></i></td>
+                                        <td>2018</td>
+                                        <td>Isle of Dogs</td>
+                                        <td>1:30:00</td>
+                                    </tr>
 
-                            </table>
-                        </div>
+                                </table>
+                            </div>
 
-                        <div style="position:relative; overflow: hidden; height:700px">
-                            <img style="position: absolute; width:100%" class="img-fluid" src="assets/img/tv.png">
-                            <video style="margin-left: 5%; margin-right: 30%; margin-bottom:10%; margin-top:5%"
-                                id="myVideo" width="70%">
-                                <source src="https://rincondelmar.club/Filmography.mp4" type="video/mp4">
-                                Your browser does not support HTML video.
-                            </video>
+                            <p class="mt-2">Audio anhalten:&nbsp;&nbsp;<span onclick="vid.pause()"><i
+                                        class="fas fa-pause"></i></span></p>
+
+
                         </div>
 
                         <script>
                             var vid = document.getElementById("myVideo");
+
                             function playVideo(time) {
                                 vid.currentTime = time;
                                 vid.play();
@@ -695,34 +706,35 @@
                         </script>
 
                         <h2 class=mt-5>Notenbeispiele</h2>
+                        <p>Diese Notenbeispiele können auch digital wiedergegeben werden (<i
+                                class="fas fa-play-circle text-primary"></i>). <br>Benutzen sie die Vollansicht (<i
+                                class="fas fa-arrows-alt text-primary"></i>) um sie besser sehen zu können.</p>
 
-                        <iframe width="100%" height="394" src="https://musescore.com/user/248731/scores/233006/embed"
-                            frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                        <span><a href="https://musescore.com/sheetmusic/artists/alexandre_desplat" target="_blank">The King's Speech</a> by <a
-                                href="https://musescore.com/user/248731">mozartinthejungle</a></span>
-
+                        <span>Imitation Game:</span>
                         <iframe width="100%" height="394" src="https://musescore.com/user/261831/scores/563481/embed"
                             frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                        <span><a href="https://musescore.com/sheetmusic/artists/alexandre_desplat" target="_blank">The Imitation Game</a> by <a
-                                href="https://musescore.com/user/261831">Ava Rose</a></span>
 
 
+                        <span>Obliviate:</span>
                         <iframe width="100%" height="394" src="https://musescore.com/user/891416/scores/662531/embed"
                             frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                        <span><a href="https://musescore.com/sheetmusic/artists/alexandre_desplat" target="_blank">Obliviate (Orchestra)</a> by <a
-                                href="https://musescore.com/user/891416">rahel08</a></span>
 
 
+                        <span>Shape of water:</span>
                         <iframe width="100%" height="394" src="https://musescore.com/user/16359646/scores/5066317/embed"
                             frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                        <span><a href="https://musescore.com/sheetmusic/artists/alexandre_desplat" target="_blank">Shape of water - Alexandre Desplat</a> by <a
-                                href="https://musescore.com/user/16359646">Tihanyi Ádám</a></span>
 
+
+                        <span>The Wonder Of Life:</span>
                         <iframe width="100%" height="394" src="https://musescore.com/user/27057308/scores/5200038/embed"
                             frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
-                        <span><a href="https://musescore.com/sheetmusic/artists/alexandre_desplat" target="_blank">The Wonder Of Life Flute and Piano</a> by <a
-                                href="https://musescore.com/user/27057308">Shigeo Ida</a></span>
 
+                            <span>The King´s Speech:</span>
+                        <iframe width="100%" height="394" src="https://musescore.com/user/248731/scores/233006/embed"
+                            frameborder="0" allowfullscreen allow="autoplay; fullscreen"></iframe>
+
+                        <span>Weitere Beispiele auf <a href="https://musescore.com/sheetmusic/artists/alexandre_desplat"
+                                target="_blank">Musescore</a></span>
 
                     </div>
 
@@ -773,8 +785,8 @@
                                     <div class="text-uppercase-expanded text-xs mb-4">Stil</div>
                                     <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><a href="merkmale.html">Merkmale</a></li>
-                                        <li class="mb-2"><a href="beispiele.html">Noten und Hörbeispiele</a>         </li>
-                                        <li class="mb-2"><a href="komposition.html">Kompositionsweise</a></li>
+                                        <li class="mb-2"><a href="beispiele.html">Noten und Hörbeispiele</a> </li>
+                                        <li class="mb-2"><a href="merkmale.html">Kompositionsweise</a></li>
                                     </ul>
                                     <ul class="list-unstyled mt-5 mb-0">
                                         <li class="mb-2"><a href="quellen.html">Quellen</a></li>
