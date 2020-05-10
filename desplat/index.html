@@ -30,7 +30,8 @@
                             aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto mr-lg-5">
-                                <li class="nav-item"><span class="nav-link" onclick="xpause()">Audio <i class="fas fa-pause"></i></span></li>
+                                <li class="nav-item"><span class="nav-link" onclick="xpause()">Audio <i
+                                            class="fas fa-pause"></i></span></li>
                                 <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
                                 <li class="nav-item dropdown dropdown-xl no-caret">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdownDemos" href="#" role="button"
@@ -181,43 +182,60 @@
                             </div>
                         </div>
 
-                        <div class="card mt-3">
-                            <div class="card-body">
-                                <h5 class="card-title">Aufgabenstellung</h5>
-                                <p class="card-text">
-                                    Thema: Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card mt-3">
+                                <div class="card-header bg-white" id="headingOne">
 
-                                <p class="card-text"> Jeder Schüler bekommt einen Komponisten zugeteilt. Dieser
-                                    Komponist muss
-                                    recherchiert und seine Musik anhand mindestens eines Beispiels analysiert
-                                    werden. Abgabe in Form einer Powerpointpräsentation, die alle wichtigen
-                                    Informationen enthält. Die Powerpointpräsentation ist abzugeben und nicht mündlich
-                                    vorzutragen. Abgabe: 9.5.</p>
+                                    <h5 class="card-title mb-0 pl-0">
+                                        <button class="btn btn-link collapsed pl-0" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Aufgabenstellung
+                                        </button>
 
-                                <p class="card-text"> Folgende Aspekte werden bewertet:
-                                    <ul>
-                                        <li>Qualität der Präsentation</li>
-                                        <li>Quellenverzeichnis</li>
-                                        <li>Rezensionen: Was sagen
-                                            andere Komponisten über ihn?</li>
-                                        <li>Welche Preise hat er gewonnen? </li>
-                                        <li>Qualität des Inhalts
-                                            der Biographie</li>
-                                        <li>Musikalische Vorbilder: Wem eifert der Komponist nach, wen
-                                            bewundert er?</li>
-                                        <li>Liste aller Werke des Komponisten </li>
-                                        <li>Links zu Hörbeispielen seiner besten Werke</li>
-                                        <li>Beschreibung seines Stils, was ist das Markenzeichen des Komponisten
-                                            (welches kompositorische Element verwendet der Komponist besonders gerne?)
-                                        </li>
-                                        <li>Notenbeispiel</li>
-                                        <li>Kompositionsweise/Einsatz musikalischer Mittel aufgezeigt mit
-                                            Hilfe des Notenbeispiels?</li>
-                                        <li>Plagiatsverdacht: Gibt es in seiner Musik Teile, die
-                                            sehr an ein anderes Werk erinnern? Zeige zumindest ein Beispiel auf!</li>
-                                    </ul>
-                                </p>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            Thema: Filmmusikkomponisten des 20. und 21. Jahrhunderts</p>
 
+                                        <p class="card-text"> Jeder Schüler bekommt einen Komponisten zugeteilt. Dieser
+                                            Komponist muss
+                                            recherchiert und seine Musik anhand mindestens eines Beispiels analysiert
+                                            werden. Abgabe in Form einer Powerpointpräsentation, die alle wichtigen
+                                            Informationen enthält. Die Powerpointpräsentation ist abzugeben und nicht
+                                            mündlich
+                                            vorzutragen. Abgabe: 9.5.</p>
+
+                                        <p class="card-text"> Folgende Aspekte werden bewertet:
+                                        <ul>
+                                            <li>Qualität der Präsentation</li>
+                                            <li>Quellenverzeichnis</li>
+                                            <li>Rezensionen: Was sagen
+                                                andere Komponisten über ihn?</li>
+                                            <li>Welche Preise hat er gewonnen? </li>
+                                            <li>Qualität des Inhalts
+                                                der Biographie</li>
+                                            <li>Musikalische Vorbilder: Wem eifert der Komponist nach, wen
+                                                bewundert er?</li>
+                                            <li>Liste aller Werke des Komponisten </li>
+                                            <li>Links zu Hörbeispielen seiner besten Werke</li>
+                                            <li>Beschreibung seines Stils, was ist das Markenzeichen des Komponisten
+                                                (welches kompositorische Element verwendet der Komponist besonders
+                                                gerne?)
+                                            </li>
+                                            <li>Notenbeispiel</li>
+                                            <li>Kompositionsweise/Einsatz musikalischer Mittel aufgezeigt mit
+                                                Hilfe des Notenbeispiels?</li>
+                                            <li>Plagiatsverdacht: Gibt es in seiner Musik Teile, die
+                                                sehr an ein anderes Werk erinnern? Zeige zumindest ein Beispiel auf!
+                                            </li>
+                                        </ul>
+                                        </p>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -290,7 +308,7 @@
                                     einzusehen,
                                     hier die Links:</p>
                                 <div class="row text-center">
-                                    
+
                                     <div class="col-lg-6 mb-5 mb-lg-0">
                                         <a href="Alexandre Desplat - Sophia Horn Barajas - 12B.pptx">
                                             <div class="icon-stack icon-stack-xl bg-yellow text-white mb-4"><i
@@ -315,7 +333,8 @@
 
                         <div class="card mt-3">
                             <div class="card-body">
-                                <p class="card-text text-center font-weight-light"><small><em>Easteregg: Vermehren oder
+                                <p class="card-text text-center font-weight-light"><small><em>Easteregg: Vermehren
+                                            oder
                                             vertreiben Sie die Noten im Hintergrund</small></em></p>
                             </div>
                         </div>
@@ -325,7 +344,8 @@
                     <div class="svg-border-rounded text-light">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none"
                             fill="currentColor">
-                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+                            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0">
+                            </path>
                         </svg>
                     </div>
                 </section>
